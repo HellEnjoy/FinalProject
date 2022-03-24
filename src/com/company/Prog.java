@@ -1,6 +1,5 @@
 package com.company;
 
-
 import java.io.*;
 import java.util.*;
 
@@ -10,10 +9,10 @@ import static com.company.BruteForce.BruteForceMethod;
 
 
 public class Prog {
-    //   private JFrame window;
-    //   private UI ui;
 
     public static void main(String[] args) {
+
+
         read();
         System.out.println("");
         write();
@@ -25,11 +24,8 @@ public class Prog {
         StringTokenizer options = new StringTokenizer(BruteForceMethod("Члосфсчлб – сзрг лк зуиеримылш ргцн."), ".");
         while (options.hasMoreTokens()) {
             System.out.println(options.nextToken());
-
         }
-
     }
-
 
     private static void read() {
         try {
@@ -54,22 +50,3 @@ public class Prog {
         }
     }
 }
-
-//       Prog programm = new Prog();
-//       programm.start();
-
-
-//   private void start() {
-//       createWindow();
-
-
-//  private void createWindow() {
-//      ui = new UI(this);
-
-//      window = new JFrame("Application");
-//      window.setSize(1024,768);
-//      window.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-//      window.setContentPane(ui);
-//      window.setVisible(true);
-//  }
-//}

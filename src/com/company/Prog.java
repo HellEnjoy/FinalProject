@@ -6,6 +6,7 @@ import java.util.*;
 import static com.company.Encoder.Encode;
 import static com.company.Decoder.Decode;
 import static com.company.BruteForce.BruteForceMethod;
+import static com.company.StaticticMethod.statisticMethod;
 
 
 public class Prog {
@@ -14,17 +15,18 @@ public class Prog {
 
 
         read();
-        System.out.println("");
+        System.out.println(" ");
         write();
-
+        System.out.println("Encoder");
         System.out.println(Encode("Философия – одна из древнейших наук.", 3));
-        System.out.println("");
+        System.out.println("Decoder");
         System.out.println(Decode("Члосфсчлб – сзрг лк зуиеримылш ргцн.", -3));
-        System.out.println("");
+        System.out.println("BruteForce");
         StringTokenizer options = new StringTokenizer(BruteForceMethod("Члосфсчлб – сзрг лк зуиеримылш ргцн."), ".");
         while (options.hasMoreTokens()) {
             System.out.println(options.nextToken());
         }
+        statisticMethod();
     }
 
     private static void read() {
@@ -50,3 +52,4 @@ public class Prog {
         }
     }
 }
+

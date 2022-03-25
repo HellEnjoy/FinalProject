@@ -24,6 +24,6 @@ public class UI extends JFrame {
         container.add(input);
         container.add(checkBox);
 
- //       buttonA.addActionListener
+
     }
 }

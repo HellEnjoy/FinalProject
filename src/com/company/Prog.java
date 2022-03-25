@@ -1,6 +1,7 @@
 package com.company;
 
 import java.io.*;
+import java.sql.SQLOutput;
 import java.util.*;
 
 import static com.company.Encoder.Encode;
@@ -13,19 +14,24 @@ public class Prog {
 
     public static void main(String[] args) {
 
-
+        System.out.println("Reading");
         read();
         System.out.println(" ");
         write();
         System.out.println("Encoder");
         System.out.println(Encode("Философия – одна из древнейших наук.", 3));
+        System.out.println(" ");
         System.out.println("Decoder");
         System.out.println(Decode("Члосфсчлб – сзрг лк зуиеримылш ргцн.", -3));
+        System.out.println(" ");
         System.out.println("BruteForce");
         StringTokenizer options = new StringTokenizer(BruteForceMethod("Члосфсчлб – сзрг лк зуиеримылш ргцн."), ".");
         while (options.hasMoreTokens()) {
             System.out.println(options.nextToken());
         }
+
+        System.out.println(" ");
+        System.out.println("StatisticMethod");
         statisticMethod();
     }
 

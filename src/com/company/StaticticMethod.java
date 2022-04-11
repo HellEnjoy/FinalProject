@@ -24,7 +24,7 @@ public class StaticticMethod {
         Iterator it = map.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry pairs = (Map.Entry) it.next();
-            System.out.println(pairs.getKey() + " = " + pairs.getValue());
+            System.out.println((pairs.getKey() + " = " + pairs.getValue()));
         }
         return s;
     }
